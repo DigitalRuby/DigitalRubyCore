@@ -66,7 +66,10 @@ public static class ApplicationHelper
 		builder.Services.Configure<ForwardedHeadersOptions>(options => options.ForwardedHeaders = Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.All);
 
 		// use newtonsoft json for controllers
-		builder.Services.AddControllers().AddNewtonsoftJson(opt =>
+		builder.Services.AddControllers().AddJsonOptions(opt =>
+		{
+			opt.JsonSerializerOptions.WriteIndented = !builder.Environment.IsProduction();
+		}).AddNewtonsoftJson(opt =>
 		{
 			opt.SerializerSettings.Converters.Add(new StringEnumConverter
 			{
