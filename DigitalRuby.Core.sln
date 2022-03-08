@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRuby.Core", "DigitalRubyCore\DigitalRuby.Core.csproj", "{5DB82668-66FB-4075-AAF8-3A913CC9E66D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRuby.Core", "DigitalRuby.Core\DigitalRuby.Core.csproj", "{950162F1-6917-4E13-AA10-F8CD6B45D41B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRuby.Core.Tests", "DigitalRubyCoreTests\DigitalRuby.Core.Tests.csproj", "{32F12E8C-ADB5-474D-ABA2-6963A2D21ED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRuby.Core.Tests", "DigitalRuby.Core.Tests\DigitalRuby.Core.Tests.csproj", "{78A814B5-F7A0-4C48-9F8F-B62EDB5CD498}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{36F3581B-6660-4AF2-B309-B324614CFEF1}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +20,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DB82668-66FB-4075-AAF8-3A913CC9E66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DB82668-66FB-4075-AAF8-3A913CC9E66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DB82668-66FB-4075-AAF8-3A913CC9E66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DB82668-66FB-4075-AAF8-3A913CC9E66D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32F12E8C-ADB5-474D-ABA2-6963A2D21ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32F12E8C-ADB5-474D-ABA2-6963A2D21ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32F12E8C-ADB5-474D-ABA2-6963A2D21ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32F12E8C-ADB5-474D-ABA2-6963A2D21ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950162F1-6917-4E13-AA10-F8CD6B45D41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950162F1-6917-4E13-AA10-F8CD6B45D41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950162F1-6917-4E13-AA10-F8CD6B45D41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950162F1-6917-4E13-AA10-F8CD6B45D41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A814B5-F7A0-4C48-9F8F-B62EDB5CD498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A814B5-F7A0-4C48-9F8F-B62EDB5CD498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A814B5-F7A0-4C48-9F8F-B62EDB5CD498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A814B5-F7A0-4C48-9F8F-B62EDB5CD498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

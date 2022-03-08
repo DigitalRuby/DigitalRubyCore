@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <AssemblyName>DigitalRuby.Core.Tests</AssemblyName>
+    <RootNamespace>DigitalRuby.Core.Tests</RootNamespace>
+    <Nullable>enable</Nullable>
+	<GenerateSerializationAssemblies>false</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\Authentication\JwtPrivateKey.txt" />
+    <None Remove="TestData\Authentication\JwtPublicKey.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\Authentication\JwtPrivateKey.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Authentication\JwtPublicKey.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.3" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.1.0" />
+    <PackageReference Include="nunit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRuby.Core\DigitalRuby.Core.csproj" />
+  </ItemGroup>
+
+</Project>
